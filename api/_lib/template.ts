@@ -43,16 +43,24 @@ function getCss(theme: string, fontSize: string) {
         src: url(data:font/woff2;charset=utf-8;base64,${mono})  format("woff2");
       }
 
-    body {
-        background: ${background};
-        background-image: radial-gradient(circle at 25px 25px, ${radial} 2%, transparent 0%), radial-gradient(circle at 75px 75px, ${radial} 2%, transparent 0%);
-        background-size: 100px 100px;
-        height: 100vh;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
+    // body {
+    //     background: ${background};
+    //     background-image: radial-gradient(circle at 25px 25px, ${radial} 2%, transparent 0%), radial-gradient(circle at 75px 75px, ${radial} 2%, transparent 0%);
+    //     background-size: 100px 100px;
+    //     height: 100vh;
+    //     display: flex;
+    //     text-align: center;
+    //     align-items: center;
+    //     justify-content: center;
+    // }
+
+    html { 
+        background: url('https://www.iampulse.com/images/iampulse-og.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
 
     code {
         color: #D400FF;
